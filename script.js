@@ -23,6 +23,14 @@ window.addEventListener('click', () => {
     }
 })
 
+window.addEventListener('touchstart', () => {
+    if (headerMenu.classList.contains('active-grid')) {
+        headerMenu.classList.remove('active-grid')
+        headerMenuButton.classList.remove('hidden')
+        headerMenuCloseButton.classList.add('hidden')
+    }
+})
+
 window.addEventListener('scroll', () => {
     if (window.scrollY >= 5) {
         header.style.backgroundColor = '#dddfdc'
