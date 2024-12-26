@@ -89,7 +89,7 @@ header .hidden {
   padding: 80px 20px 100px;
   background-image: url(../../images/main/main-section/Modul/Cloud.svg), url(../../images/main/main-section/Modul/Mountain.svg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 20px 60px, 0px 560px;
 }
 #main .main-content {
   display: flex;
