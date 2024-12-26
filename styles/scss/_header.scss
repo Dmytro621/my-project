@@ -23,16 +23,18 @@ header {
 
             .menu {
                 width: 315px;
-                height: 405px;
                 background-color: #5B625B;
                 position: absolute;
                 top: 42px;
+                height: 0px;
                 left: 0;
+                display: grid;
                 border-radius: 8px;
                 padding: 28px 24px;
                 grid-template-columns: 1fr;
                 gap: 16px;
-                display: none;
+                visibility: hidden;
+                transition: height 0.1s ease-out;
 
                 a {
                     text-decoration: none;
@@ -76,6 +78,8 @@ header {
 
     .active-grid {
         display: grid !important;
+        visibility: visible !important;
+        height: 405px !important;
     }
 
     .active-inline-block {
@@ -86,3 +90,13 @@ header {
         display: none !important;
     }
 }
+
+// @keyframes open{
+//     0% {
+//         height: 0px;
+//     }
+
+//     100% {
+//         height: 405px;
+//     }
+// }
