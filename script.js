@@ -15,7 +15,9 @@ headerMenuCloseButton.addEventListener('click', () => {
     headerMenuCloseButton.classList.toggle('hidden')
 })
 
-window.addEventListener('click', () => {
+window.addEventListener('click', (event) => {
+    event.preventDefault();
+    
     if (headerMenu.classList.contains('active-grid')) {
         headerMenu.classList.remove('active-grid')
         headerMenuButton.classList.remove('hidden')
@@ -23,7 +25,8 @@ window.addEventListener('click', () => {
     }
 })
 
-window.addEventListener('touchstart', () => {
+window.addEventListener('touchstart', (event) => {
+    if (event.preventDefault) return
     if (headerMenu.classList.contains('active-grid')) {
         headerMenu.classList.remove('active-grid')
         headerMenuButton.classList.remove('hidden')

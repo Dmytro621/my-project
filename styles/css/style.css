@@ -9,6 +9,11 @@ body {
   background-color: #C3C8C2;
 }
 
+.wrapper {
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 header {
   background-color: rgba(91, 98, 91, 0.5);
   width: 100%;
@@ -124,6 +129,10 @@ header .hidden {
   color: #515f51;
   margin: 0;
 }
+#main .main-content .main-content-info .main-content-info-button {
+  display: flex;
+  justify-content: center;
+}
 #main .main-content .main-content-info .main-content-info-button .buy-button {
   border-radius: 40px;
   border: 0px;
@@ -137,6 +146,51 @@ header .hidden {
 }
 #main .main-content .main-content-info .main-content-info-button .buy-button:active {
   background-color: #5b625b;
+}
+
+#for-whom {
+  text-align: center;
+}
+#for-whom h2 {
+  font-weight: 400;
+  font-size: 36px;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  text-align: center;
+  color: #3f483f;
+  margin: 0;
+}
+#for-whom span {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 302%;
+  letter-spacing: 0.05em;
+  text-align: center;
+  color: #3f483f;
+  font-family: "denistina", sans-serif;
+}
+#for-whom .cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px 20px;
+  justify-content: center;
+}
+#for-whom .cards .card {
+  background-color: #515f51;
+  border-radius: 10px;
+  padding: 0 4px 12px;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  display: flex;
+  align-items: end;
+}
+#for-whom .cards p {
+  margin: 0;
+  font-weight: 300;
+  font-size: 16px;
+  text-align: center;
+  color: #c3c8c2;
 }
 
 /*# sourceMappingURL=style.css.map */
