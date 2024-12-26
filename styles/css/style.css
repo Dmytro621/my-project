@@ -1,19 +1,4 @@
 @import url("https://fonts.cdnfonts.com/css/denistina");
-* {
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-}
-
-body {
-  margin: 0;
-  background-color: #C3C8C2;
-}
-
-.wrapper {
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
 header {
   background-color: rgba(91, 98, 91, 0.5);
   width: 100%;
@@ -150,6 +135,8 @@ header .hidden {
 }
 
 #for-whom {
+  background-color: #C3C8C2;
+  padding-bottom: 100px;
   text-align: center;
 }
 #for-whom h2 {
@@ -205,6 +192,20 @@ header .hidden {
   font-size: 16px;
   text-align: center;
   color: #c3c8c2;
+}
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
+.wrapper {
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -2,16 +2,7 @@ const headerMenuButton = document.querySelector('.menu-button')
 const headerMenu = document.querySelector('.menu')
 const headerMenuCloseButton = document.querySelector('.menu-close-button')
 const header = document.querySelector('header')
-
-let phoneTest = false;
-
-function phoneCheck() {
-        phoneTest = true
-}
-
-window.addEventListener('click', () => {
-    phoneCheck()
-})
+const headerMenuLink = document.querySelectorAll('.menu a')
 
 
 headerMenuButton.addEventListener('click', (event) => {
@@ -32,16 +23,13 @@ window.addEventListener('click', (event) => {
         headerMenuButton.classList.remove('hidden')
         headerMenuCloseButton.classList.add('hidden')
     }
-    phoneCheck()
 })
 
 window.addEventListener('touchstart', (event) => {
-    if (phoneTest == false) {
         if (headerMenu.classList.contains('active-grid') && !headerMenu.contains(event.target) && !headerMenuButton.contains(event.target)) {
         headerMenu.classList.remove('active-grid')
         headerMenuButton.classList.remove('hidden')
         headerMenuCloseButton.classList.add('hidden')
-    }
     }
 })
 
@@ -51,4 +39,12 @@ window.addEventListener('scroll', () => {
     } else {
         header.style.backgroundColor = ''
     }
+})
+
+headerMenuLink.forEach(link => {
+    link.addEventListener('click', () => {
+        headerMenu.classList.toggle('active-grid')
+        headerMenuButton.classList.remove('hidden')
+        headerMenuCloseButton.classList.add('hidden')
+    })
 })

@@ -1,0 +1,69 @@
+#main {
+    background-color: #C3C8C2;
+    padding: 80px 20px 100px;
+    background-image: url(../../images/main/main-section/Modul/Cloud.svg), url(../../images/main/main-section/Modul/Mountain.svg);
+    background-repeat: no-repeat;
+    background-position: 20px 60px, 0px 560px;
+
+    .main-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+        .main-content-image {
+            height: 348px;
+        }
+
+        .main-content-info {
+            .main-content-info-text {
+                margin-bottom: 35px;
+
+                h2 {
+                    font-weight: 500;
+                    font-size: 43px;
+                    line-height: 125%;
+                    color: #3f483f;
+                    margin: 15px 0;
+                }
+
+                .www {
+                    font-weight: 400;
+                    font-size: 52px;
+                    line-height: 88%;
+                    color: #fff;
+                    font-family: 'denistina', sans-serif;
+                    vertical-align: middle;
+                }
+
+                p {
+                    font-weight: 300;
+                    font-size: 16px;
+                    color: #515f51;
+                    margin: 0;
+                }
+            }
+
+            .main-content-info-button {
+                display: flex;
+                justify-content: center;
+
+                .buy-button {
+                    border-radius: 40px;
+                    border: 0px;
+                    padding: 15px 40px;
+                    width: 335px;
+                    height: 64px;
+                    background-color: #515f51;
+                    font-weight: 500;
+                    font-size: 25px;
+                    color: #fff;
+                }
+
+                .buy-button:active {
+                    background-color: #5b625b;
+                }
+            }
+        }
+    }
+}
