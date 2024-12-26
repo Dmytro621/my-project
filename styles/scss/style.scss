@@ -7,6 +7,7 @@
 
 body {
     margin: 0;
+    background-color: #C3C8C2;
 }
 
 header {
@@ -73,10 +74,14 @@ header {
             padding: 10px 25px;
             width: 169px;
             height: 38px;
-            background-color: #5b625b;
+            background-color: #515f51;
             font-weight: 500;
             font-size: 16px;
             color: #fff;
+    }
+
+    .buy-button:active {
+        background-color: #5b625b;
     }
 
     .active-grid {
@@ -95,6 +100,9 @@ header {
 #main {
     background-color: #C3C8C2;
     padding: 80px 20px 100px;
+    background-image: url(../../images/main/main-section/Modul/Cloud.svg),url(../../images/main/main-section/Modul/Mountain.svg);
+    background-repeat: no-repeat;
+    background-position: center;
 
     .main-content {
         display: flex;
@@ -142,11 +150,15 @@ header {
                         padding: 15px 40px;
                         width: 335px;
                         height: 64px;
-                        background-color: #5b625b;
+                        background-color: #515f51;
                         font-weight: 500;
-                        font-size: 16px;
+                        font-size: 25px;
                         color: #fff;
                     }
+                
+                .buy-button:active {
+                    background-color: #5b625b;
+                }
             }
         }
     }
