@@ -1,0 +1,52 @@
+#author {
+    padding-bottom: 0px;
+    text-align: center;
+    
+    
+
+     .font-line {
+            margin-bottom: 52px;
+            margin-top: 0;
+        }
+        
+    h2 {
+        margin-top: 0;
+        margin-bottom: 40px;
+        font-weight: 400;
+            font-size: 45px;
+            text-decoration: underline;
+            text-decoration-skip-ink: none;
+            text-align: center;
+            color: #3f483f;
+    }
+
+    .author-image {
+        margin-bottom: 60px;
+    }
+
+    .author-content {
+        padding: 0 30px;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        gap: 45px;
+        margin-bottom: 40px ;
+
+        .author-content-item {
+            display: flex;
+            gap: 20px;
+            text-align: start;
+
+            .author-content-item-text {
+                margin: auto;
+            }
+
+            p {
+                font-weight: 300;
+                    font-size: 15px;
+                    color: #515f51;
+                    margin: 0;
+            }
+        }
+    }
+}

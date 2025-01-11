@@ -1,6 +1,7 @@
 @use './header';
 @use './main';
 @use './from-whom';
+@use './author';
 @import url('https://fonts.cdnfonts.com/css/denistina');
 
 * {
@@ -9,6 +10,7 @@
 }
 
 body {
+background-color: #C3C8C2;
     margin: 0;
 }
 
@@ -17,4 +19,12 @@ body {
     padding: 0 20px;
 }
 
-  
+.font-line {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 302%;
+    letter-spacing: 0.05em;
+    text-align: center;
+    color: #3f483f;
+    font-family: 'denistina', sans-serif;
+}
