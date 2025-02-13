@@ -192,6 +192,11 @@ header .hidden {
 #author {
   padding-bottom: 0px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+#author img:last-of-type {
+  margin-top: auto;
 }
 #author .font-line {
   margin-bottom: 52px;
@@ -231,6 +236,106 @@ header .hidden {
   font-size: 15px;
   color: #515f51;
   margin: 0;
+}
+
+#program {
+  background-color: #515f51;
+  padding: 10px 20px;
+  text-align: center;
+}
+#program h2 {
+  margin: 0;
+  margin-bottom: 40px;
+  font-weight: 400;
+  font-size: 36px;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  text-align: center;
+  color: #d9d9d9;
+}
+#program .program-cards .program-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+#program .program-cards .program-card .card-number {
+  position: absolute;
+  z-index: 2;
+  top: -15px;
+  border-radius: 8px;
+  padding: 8px 28px;
+  background-color: #3f483f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#program .program-cards .program-card .card-number p {
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  color: #fff;
+  margin: 0;
+}
+#program .program-cards .program-card .card-content {
+  position: relative;
+}
+#program .program-cards .program-card .card-content .card-content-hero {
+  padding: 30px;
+  background-image: url(../../images/main/program/card-1.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 20px;
+  position: relative;
+  z-index: 1;
+}
+#program .program-cards .program-card .card-content .card-content-hero .content-hero-text {
+  border-radius: 8px;
+  padding: 12px 20px;
+  background-color: #c3c8c2;
+}
+#program .program-cards .program-card .card-content .card-content-hero .content-hero-text p {
+  font-weight: 300;
+  font-size: 16px;
+  text-align: center;
+  color: #3f483f;
+  margin: 0;
+}
+#program .program-cards .program-card .card-content .card-content-second {
+  position: relative;
+  bottom: 30px;
+  border-radius: 16px;
+  padding: 20px 16px;
+  padding-top: 50px;
+  background-color: #c3c8c2;
+}
+#program .program-cards .program-card .card-content .card-content-second ol {
+  list-style: none;
+  counter-reset: custom-counter;
+  margin: 0;
+  padding: 0;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+#program .program-cards .program-card .card-content .card-content-second ol li {
+  counter-increment: custom-counter;
+  position: relative;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 112%;
+  color: #515f51;
+}
+#program .program-cards .program-card .card-content .card-content-second ol li::before {
+  display: none;
+}
+#program .program-cards .program-card .card-content .card-open-button {
+  position: relative;
+  bottom: 40px;
+  z-index: 3;
 }
 
 * {

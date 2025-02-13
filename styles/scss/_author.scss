@@ -1,10 +1,15 @@
 #author {
     padding-bottom: 0px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
     
+    img:last-of-type {
+        margin-top: auto;
+    }
     
 
-     .font-line {
+    .font-line {
             margin-bottom: 52px;
             margin-top: 0;
         }
