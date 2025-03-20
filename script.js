@@ -54,7 +54,7 @@ const cardContentsSecond = document.querySelectorAll('.card-content-second');
 
 cardOpenButtons.forEach((button, index) => {
     if (cardContentsSecond[index].classList.contains('active')) {
-            cardContentsSecond[index].style.marginBottom = '24px'
+        cardContentsSecond[index].style.marginBottom = '24px'
         } else {
             cardContentsSecond[index].style.marginBottom = '34px'
         }
