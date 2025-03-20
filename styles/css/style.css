@@ -240,7 +240,7 @@ header .hidden {
 
 #program {
   background-color: #515f51;
-  padding: 10px 20px;
+  padding: 10px 20px 22px;
   text-align: center;
 }
 #program h2 {
@@ -253,11 +253,20 @@ header .hidden {
   text-align: center;
   color: #d9d9d9;
 }
+#program .program-cards {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+#program .program-cards .program-card:last-child .card-content-second {
+  margin-bottom: 0 !important;
+}
 #program .program-cards .program-card {
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
+  width: 335px;
 }
 #program .program-cards .program-card .card-number {
   position: absolute;
@@ -287,6 +296,7 @@ header .hidden {
   background-repeat: no-repeat;
   background-size: contain;
   border-radius: 20px;
+  width: 335px;
   position: relative;
   z-index: 1;
 }
@@ -303,12 +313,15 @@ header .hidden {
   margin: 0;
 }
 #program .program-cards .program-card .card-content .card-content-second {
+  display: block;
   position: relative;
+  max-height: 0;
   bottom: 30px;
   border-radius: 16px;
-  padding: 20px 16px;
-  padding-top: 50px;
+  padding: 0 20px 16px;
   background-color: #c3c8c2;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
 }
 #program .program-cards .program-card .card-content .card-content-second ol {
   list-style: none;
@@ -320,9 +333,9 @@ header .hidden {
   flex-direction: column;
   flex-wrap: wrap;
   gap: 15px;
+  padding-top: 50px;
 }
 #program .program-cards .program-card .card-content .card-content-second ol li {
-  counter-increment: custom-counter;
   position: relative;
   font-weight: 300;
   font-size: 16px;
@@ -332,10 +345,20 @@ header .hidden {
 #program .program-cards .program-card .card-content .card-content-second ol li::before {
   display: none;
 }
+#program .program-cards .program-card .card-content .card-content-second.active {
+  max-height: 700px;
+}
 #program .program-cards .program-card .card-content .card-open-button {
-  position: relative;
-  bottom: 40px;
+  position: absolute;
+  top: 83px;
+  left: 46%;
   z-index: 3;
+  transition: bottom 0.5s ease;
+  transform: rotate(180deg);
+}
+#program .program-cards .program-card .card-content .card-open-button.active {
+  transform: rotate(0deg);
+  top: 667px;
 }
 
 * {

@@ -48,3 +48,18 @@ headerMenuLink.forEach(link => {
         headerMenuCloseButton.classList.add('hidden')
     })
 })
+
+const cardOpenButtons = document.querySelectorAll('.card-open-button');
+const cardContentsSecond = document.querySelectorAll('.card-content-second');
+
+cardOpenButtons.forEach((button, index) => {
+    if (cardContentsSecond[index].classList.contains('active')) {
+            cardContentsSecond[index].style.marginBottom = '24px'
+        } else {
+            cardContentsSecond[index].style.marginBottom = '34px'
+        }
+    button.addEventListener('click', () => {
+        cardContentsSecond[index].classList.toggle('active');
+        cardOpenButtons[index].classList.toggle('active');
+    });
+});

@@ -1,6 +1,6 @@
 #program {
-    background-color:#515f51 ;
-    padding: 10px 20px;
+    background-color: #515f51;
+    padding: 10px 20px 22px;
     text-align: center;
 
     h2 {
@@ -15,14 +15,20 @@
     }
 
     .program-cards {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
 
+        .program-card:last-child .card-content-second {
+                margin-bottom: 0 !important;
+            }
 
         .program-card {
             display: flex;
             flex-direction: column;
             align-items: center;
             position: relative;
-
+            width: 335px;
 
             .card-number {
                 position: absolute;
@@ -34,7 +40,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                
+
                 p {
                     font-weight: 400;
                     font-size: 14px;
@@ -46,7 +52,7 @@
 
             .card-content {
                 position: relative;
-                
+
                 .card-content-hero {
                     padding: 30px;
                     background-image: url(../../images/main/program/card-1.png);
@@ -54,6 +60,7 @@
                     background-repeat: no-repeat;
                     background-size: contain;
                     border-radius: 20px;
+                    width: 335px;
                     position: relative;
                     z-index: 1;
 
@@ -73,43 +80,59 @@
                 }
 
                 .card-content-second {
+                    display: block;
                     position: relative;
+                    max-height: 0;
                     bottom: 30px;
                     border-radius: 16px;
-                    padding: 20px 16px;
-                    padding-top: 50px;
+                    padding: 0 20px 16px;
+                    
                     background-color: #c3c8c2;
+                    overflow: hidden;
+                    transition: max-height 0.5s ease-out;
 
                     ol {
-                            list-style: none;
-                            counter-reset: custom-counter;
-                            margin: 0;
-                            padding: 0;
-                            text-align: start;
-                            display: flex;
-                            flex-direction: column;
-                            flex-wrap: wrap;
-                            gap: 15px;
-                    
-                            li {
-                                counter-increment: custom-counter; // Увеличиваем счётчик для каждого li
-                                position: relative;
-                                font-weight: 300;
-                                font-size: 16px;
-                                line-height: 112%;
-                                color: #515f51;
-                    
-                                &::before {
-                                    display: none;
-                                }
+                        list-style: none;
+                        counter-reset: custom-counter;
+                        margin: 0;
+                        padding: 0;
+                        text-align: start;
+                        display: flex;
+                        flex-direction: column;
+                        flex-wrap: wrap;
+                        gap: 15px;
+                        padding-top: 50px;
+
+                        li {
+                            position: relative;
+                            font-weight: 300;
+                            font-size: 16px;
+                            line-height: 112%;
+                            color: #515f51;
+
+                            &::before {
+                                display: none;
                             }
                         }
+                    }
+                }
+
+                .card-content-second.active {
+                    max-height: 700px;
                 }
 
                 .card-open-button {
-                    position: relative;
-                    bottom: 40px;
+                    position: absolute;
+                    top: 83px;
+                    left: 46%;
                     z-index: 3;
+                    transition: bottom 0.5s ease;
+                    transform: rotate(180deg)
+                }
+
+                .card-open-button.active {
+                    transform: rotate(0deg);
+                    top: 667px;
                 }
             }
         }
