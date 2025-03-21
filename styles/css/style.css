@@ -197,7 +197,6 @@ header .hidden {
 }
 #author img:last-of-type {
   margin-top: auto;
-  width: 100%;
 }
 #author .font-line {
   margin-bottom: 52px;
@@ -241,45 +240,33 @@ header .hidden {
 
 #program {
   background-color: #515f51;
-  padding: 10px 20px 22px;
+  padding: 10px 20px 0;
   text-align: center;
 }
 #program h2 {
-  margin: 0;
-  margin-bottom: 40px;
   font-weight: 400;
   font-size: 36px;
   text-decoration: underline;
   text-decoration-skip-ink: none;
   text-align: center;
   color: #d9d9d9;
+  margin: 0;
+  margin-bottom: 40px;
 }
-#program .program-cards {
+#program .program-cards .program-card {
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
   align-items: center;
 }
-#program .program-cards .program-card:last-child .card-content-second {
-  margin-bottom: 0 !important;
-}
-#program .program-cards .program-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-  width: 335px;
-}
 #program .program-cards .program-card .card-number {
-  position: absolute;
-  z-index: 2;
-  top: -15px;
   border-radius: 8px;
   padding: 8px 28px;
-  background-color: #3f483f;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  min-width: 120px;
+  height: 28px;
+  background: #3f483f;
+  position: relative;
+  top: 14px;
 }
 #program .program-cards .program-card .card-number p {
   font-weight: 400;
@@ -288,40 +275,77 @@ header .hidden {
   color: #fff;
   margin: 0;
 }
-#program .program-cards .program-card .card-content {
-  position: relative;
-}
 #program .program-cards .program-card .card-content .card-content-hero {
-  padding: 30px;
-  background-image: url(../../images/main/program/card-1.png);
+  background-color: #515f51;
+  width: 335px;
+  height: 100px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  transition-delay: 0.5s;
+}
+#program .program-cards .program-card .card-content .card-content-hero .content-hero-image {
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: contain;
+  height: 100%;
   border-radius: 20px;
-  width: 335px;
-  position: relative;
-  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-#program .program-cards .program-card .card-content .card-content-hero .content-hero-text {
+#program .program-cards .program-card .card-content .card-content-hero .content-hero-image .content-hero-text {
   border-radius: 8px;
   padding: 12px 20px;
-  background-color: #c3c8c2;
+  width: 281px;
+  background: #c3c8c2;
 }
-#program .program-cards .program-card .card-content .card-content-hero .content-hero-text p {
+#program .program-cards .program-card .card-content .card-content-hero .content-hero-image .content-hero-text p {
   font-weight: 300;
   font-size: 16px;
   text-align: center;
   color: #3f483f;
   margin: 0;
 }
+#program .program-cards .program-card .card-content .card-content-hero .image-1 {
+  background-image: url(../../images/main/program/card-1.png);
+}
+#program .program-cards .program-card .card-content .card-content-hero .image-2 {
+  background-image: url(../../images/main/program/card-2.png);
+}
+#program .program-cards .program-card .card-content .card-content-hero .image-3 {
+  background-image: url(../../images/main/program/card-3.png);
+}
+#program .program-cards .program-card .card-content .card-content-hero .image-4 {
+  background-image: url(../../images/main/program/card-4.png);
+}
+#program .program-cards .program-card .card-content .card-content-hero .image-5 {
+  background-image: url(../../images/main/program/card-5.png);
+}
+#program .program-cards .program-card .card-content .card-content-hero .image-6 {
+  background-image: url(../../images/main/program/card-6.png);
+}
+#program .program-cards .program-card .card-content .card-content-hero .image-7 {
+  background-image: url(../../images/main/program/card-7.png);
+}
+#program .program-cards .program-card .card-content .card-content-hero .image-8 {
+  background-image: url(../../images/main/program/card-8.png);
+}
+#program .program-cards .program-card .card-content .card-content-hero .image-9 {
+  background-image: url(../../images/main/program/card-9.png);
+}
+#program .program-cards .program-card .card-content .card-content-hero .image-10 {
+  background-image: url(../../images/main/program/card-10.png);
+}
+#program .program-cards .program-card .card-content .card-content-hero.active {
+  transition-delay: 0s;
+  background: #c3c8c2;
+}
 #program .program-cards .program-card .card-content .card-content-second {
   display: block;
-  position: relative;
+  background: #c3c8c2;
+  width: 335px;
   max-height: 0;
-  bottom: 30px;
-  border-radius: 16px;
-  padding: 0 20px 16px;
-  background-color: #c3c8c2;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
   overflow: hidden;
   transition: max-height 0.5s ease-out;
 }
@@ -335,7 +359,7 @@ header .hidden {
   flex-direction: column;
   flex-wrap: wrap;
   gap: 15px;
-  padding-top: 50px;
+  padding: 20px 16px;
 }
 #program .program-cards .program-card .card-content .card-content-second ol li {
   position: relative;
@@ -348,20 +372,17 @@ header .hidden {
   display: none;
 }
 #program .program-cards .program-card .card-content .card-content-second.active {
-  max-height: 700px;
+  max-height: 1000px;
 }
-#program .program-cards .program-card .card-content .card-open-button {
-  position: absolute;
-  top: 83px;
-  left: 46%;
-  z-index: 3;
-  transition: bottom 0.5s ease;
-  transform: rotate(180deg);
+#program .program-cards .program-card .card-open-button {
+  position: relative;
+  bottom: 13px;
+  transition: 0.5s;
+  height: 26px;
 }
-#program .program-cards .program-card .card-content .card-open-button.active {
-  transform: rotate(0deg);
-  bottom: 47px;
-  top: auto;
+#program .program-cards .program-card .card-open-button.active {
+  rotate: 180deg;
+  transition: 0.5s;
 }
 
 * {

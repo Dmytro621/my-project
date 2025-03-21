@@ -51,15 +51,12 @@ headerMenuLink.forEach(link => {
 
 const cardOpenButtons = document.querySelectorAll('.card-open-button');
 const cardContentsSecond = document.querySelectorAll('.card-content-second');
+const cardContentHero = document.querySelectorAll('.card-content-hero');
 
 cardOpenButtons.forEach((button, index) => {
-    if (cardContentsSecond[index].classList.contains('active')) {
-        cardContentsSecond[index].style.marginBottom = '24px'
-        } else {
-            cardContentsSecond[index].style.marginBottom = '34px'
-        }
     button.addEventListener('click', () => {
         cardContentsSecond[index].classList.toggle('active');
         cardOpenButtons[index].classList.toggle('active');
+        cardContentHero[index].classList.toggle('active');
     });
 });
