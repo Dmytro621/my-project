@@ -1,0 +1,64 @@
+#what-you-get {
+    background-color: #C3C8C2;
+    padding: 50px 20px;
+
+    h2 {
+        font-weight: 400;
+        font-size: 45px;
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+        text-align: center;
+        color: #3f483f;
+        margin-top: 0;
+        margin-bottom: 70px;
+    }
+
+    .what-you-get-cards {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+
+        .card {
+            padding: 16px 37px;
+            border-radius: 20px;
+            width: 334px;
+            height: 350px;
+            background: #cfd4cf;
+
+            .card-image {
+                border-radius: 100%;
+                width: 260px;
+                height: 260px;
+                background-position: center center;
+                background-repeat: no-repeat;
+                margin-bottom: 20px;
+            }
+            
+            .image-1 {
+                background-image: url(../../images/main/what-you-get/card-1.png);
+            }
+
+            .image-2 {
+                background-image: url(../../images/main/what-you-get/card-2.png);
+            }
+
+            .image-3 {
+                background-image: url(../../images/main/what-you-get/card-3.png);
+            }
+
+            .image-4 {
+                background-image: url(../../images/main/what-you-get/card-4.png);
+            }
+
+            p {
+                margin: 0;
+                font-weight: 400;
+                font-size: 16px;
+                text-align: center;
+                color: #3f483f;
+            }
+        }
+    }
+}
