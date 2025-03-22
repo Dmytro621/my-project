@@ -1,64 +1,71 @@
 #what-you-get {
-    background-color: #C3C8C2;
-    padding: 50px 20px;
+    padding: 50px 20px 30px;
+    background-image: url(../../images/main/what-you-get/background.svg);
+    background-repeat: no-repeat;
+    background-position: 50px 540px;
 
     h2 {
         font-weight: 400;
-        font-size: 45px;
+        font-size: 34px;
         text-decoration: underline;
         text-decoration-skip-ink: none;
         text-align: center;
         color: #3f483f;
         margin-top: 0;
-        margin-bottom: 70px;
+        margin-bottom: 50px;
     }
 
-    .what-you-get-cards {
-        display: flex;
-        flex-wrap: nowrap;
-        flex-direction: column;
-        align-items: center;
-        gap: 40px;
+    .cards {
+        list-style: none;
+        padding: 0;
+        margin: 0;
 
         .card {
-            padding: 16px 37px;
-            border-radius: 20px;
-            width: 334px;
-            height: 350px;
-            background: #cfd4cf;
+            display: flex;
+            align-items: center;
+            gap: 20px;
 
-            .card-image {
-                border-radius: 100%;
-                width: 260px;
-                height: 260px;
-                background-position: center center;
-                background-repeat: no-repeat;
-                margin-bottom: 20px;
-            }
-            
-            .image-1 {
-                background-image: url(../../images/main/what-you-get/card-1.png);
-            }
+             div {
+                flex-shrink: 0;
+                width: 32px;
+                height: 70px;
+             }
 
-            .image-2 {
-                background-image: url(../../images/main/what-you-get/card-2.png);
-            }
+             .item-1 {
+                background-image: url(../../images/main/what-you-get/item-1.png);
+             }
 
-            .image-3 {
-                background-image: url(../../images/main/what-you-get/card-3.png);
-            }
+             .item-2 {
+                background-image: url(../../images/main/what-you-get/item-2.png);
+             }
 
-            .image-4 {
-                background-image: url(../../images/main/what-you-get/card-4.png);
-            }
+             .item-3 {
+                background-image: url(../../images/main/what-you-get/item-3.png);
+             }
 
-            p {
+             .item-4 {
+                background-image: url(../../images/main/what-you-get/item-4.png);
+             }
+
+             .item-5 {
+                background-image: url(../../images/main/what-you-get/item-5.png);
+             }
+
+             .item-6 {
+                background-image: url(../../images/main/what-you-get/item-6.png);
+             }
+
+             .item-7 {
+                background-image: url(../../images/main/what-you-get/item-7.png);
+             }
+
+             p {
                 margin: 0;
-                font-weight: 400;
+                font-weight: 300;
                 font-size: 16px;
-                text-align: center;
                 color: #3f483f;
-            }
+                text-align: left;
+             }
         }
     }
 }

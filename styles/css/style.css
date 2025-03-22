@@ -382,11 +382,11 @@ header .hidden {
   transition: 0.5s;
 }
 
-#what-you-get {
+#format {
   background-color: #C3C8C2;
   padding: 50px 20px;
 }
-#what-you-get h2 {
+#format h2 {
   font-weight: 400;
   font-size: 45px;
   text-decoration: underline;
@@ -396,21 +396,21 @@ header .hidden {
   margin-top: 0;
   margin-bottom: 70px;
 }
-#what-you-get .what-you-get-cards {
+#format .format-cards {
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
   align-items: center;
   gap: 40px;
 }
-#what-you-get .what-you-get-cards .card {
+#format .format-cards .card {
   padding: 16px 37px;
   border-radius: 20px;
   width: 334px;
   height: 350px;
   background: #cfd4cf;
 }
-#what-you-get .what-you-get-cards .card .card-image {
+#format .format-cards .card .card-image {
   border-radius: 100%;
   width: 260px;
   height: 260px;
@@ -418,24 +418,84 @@ header .hidden {
   background-repeat: no-repeat;
   margin-bottom: 20px;
 }
-#what-you-get .what-you-get-cards .card .image-1 {
-  background-image: url(../../images/main/what-you-get/card-1.png);
+#format .format-cards .card .image-1 {
+  background-image: url(../../images/main/format/card-1.png);
 }
-#what-you-get .what-you-get-cards .card .image-2 {
-  background-image: url(../../images/main/what-you-get/card-2.png);
+#format .format-cards .card .image-2 {
+  background-image: url(../../images/main/format/card-2.png);
 }
-#what-you-get .what-you-get-cards .card .image-3 {
-  background-image: url(../../images/main/what-you-get/card-3.png);
+#format .format-cards .card .image-3 {
+  background-image: url(../../images/main/format/card-3.png);
 }
-#what-you-get .what-you-get-cards .card .image-4 {
-  background-image: url(../../images/main/what-you-get/card-4.png);
+#format .format-cards .card .image-4 {
+  background-image: url(../../images/main/format/card-4.png);
 }
-#what-you-get .what-you-get-cards .card p {
+#format .format-cards .card p {
   margin: 0;
   font-weight: 400;
   font-size: 16px;
   text-align: center;
   color: #3f483f;
+}
+
+#what-you-get {
+  padding: 50px 20px 30px;
+  background-image: url(../../images/main/what-you-get/background.svg);
+  background-repeat: no-repeat;
+  background-position: 50px 540px;
+}
+#what-you-get h2 {
+  font-weight: 400;
+  font-size: 34px;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  text-align: center;
+  color: #3f483f;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+#what-you-get .cards {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#what-you-get .cards .card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+#what-you-get .cards .card div {
+  flex-shrink: 0;
+  width: 32px;
+  height: 70px;
+}
+#what-you-get .cards .card .item-1 {
+  background-image: url(../../images/main/what-you-get/item-1.png);
+}
+#what-you-get .cards .card .item-2 {
+  background-image: url(../../images/main/what-you-get/item-2.png);
+}
+#what-you-get .cards .card .item-3 {
+  background-image: url(../../images/main/what-you-get/item-3.png);
+}
+#what-you-get .cards .card .item-4 {
+  background-image: url(../../images/main/what-you-get/item-4.png);
+}
+#what-you-get .cards .card .item-5 {
+  background-image: url(../../images/main/what-you-get/item-5.png);
+}
+#what-you-get .cards .card .item-6 {
+  background-image: url(../../images/main/what-you-get/item-6.png);
+}
+#what-you-get .cards .card .item-7 {
+  background-image: url(../../images/main/what-you-get/item-7.png);
+}
+#what-you-get .cards .card p {
+  margin: 0;
+  font-weight: 300;
+  font-size: 16px;
+  color: #3f483f;
+  text-align: left;
 }
 
 * {
